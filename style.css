@@ -57,6 +57,7 @@ button {
     height: 2.5rem;
     width: 6rem;
     border-radius: 1.5rem;
+    font-weight: bold;
 }
 
 .sidebar {
@@ -75,10 +76,6 @@ button {
     display: flex;
     align-items: center;
     gap: 1rem;
-}
-
-.sidebar ul img {
-    height: 2rem;
 }
 
 .header {
@@ -145,7 +142,7 @@ button {
 
 .main-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
 }
 
@@ -206,4 +203,14 @@ button {
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+/* Images */
+.sidebar ul img {
+    height: 2rem;
+}
+
+.main img,
+.header img {
+    height: 1.5rem;
 }
