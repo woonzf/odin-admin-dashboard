@@ -13,10 +13,16 @@ body {
 
 ul {
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 li {
     list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 a {
@@ -59,10 +65,20 @@ button {
     grid-row: 1 / -1;
     font-size: 1.5rem;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
 .sidebar div {
     font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sidebar ul img {
+    height: 2rem;
 }
 
 .header {
