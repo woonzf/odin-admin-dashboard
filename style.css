@@ -1,3 +1,9 @@
+/* Font */
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+}
+
 :root {
     --color-content: #E2E8F0;
     --color-sidebar: #1992D4;
@@ -9,6 +15,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 4fr;
+    font-family: 'Roboto', sans-serif;
 }
 
 ul {
