@@ -7,6 +7,7 @@
 :root {
     --color-content: #E2E8F0;
     --color-sidebar: #1992D4;
+    --color-card-edge: #F0B429;
 }
 
 body {
@@ -29,6 +30,8 @@ li {
     list-style-type: none;
 }
 
+
+/* a */
 a {
     text-decoration: none;
     display: flex;
@@ -40,10 +43,19 @@ a {
     color: white;
 }
 
+.sidebar a:hover {
+    text-shadow: 0 0 10px black;
+}
+
 .header a {
     color: black;
 }
 
+.header-top a:hover {
+    text-shadow: 0 0 10px grey;
+}
+
+/* input */
 input {
     background-color: var(--color-content);
     width: 80%;
@@ -54,10 +66,28 @@ input {
 }
 
 input:focus {
-    outline: none;
+    outline: 1px solid var(--color-sidebar);
 }
 
-button {
+input:hover {
+    box-shadow: 0 0 10px var(--color-sidebar);
+}
+
+/* button */
+.header-top button,
+.card-bottom button {
+    border: none;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.header-top button:hover,
+.card-bottom button:hover {
+    box-shadow: 0 0 20px var(--color-card-edge);
+    background-color: hsl(42, 87%, 80%);
+}
+
+.header-bottom button {
     background-color: var(--color-sidebar);
     color: white;
     border: none;
@@ -65,6 +95,10 @@ button {
     width: 6rem;
     border-radius: 1.5rem;
     font-weight: bold;
+}
+
+.header-bottom button:hover {
+    box-shadow: 0 0 10px var(--color-sidebar);
 }
 
 .sidebar {
@@ -154,7 +188,7 @@ button {
 }
 
 .main .card {
-    border-left: 0.5rem solid #F0B429;
+    border-left: 0.5rem solid var(--color-card-edge);
     padding: 1rem 1rem 0 1rem;
     display: grid;
     grid-template-rows: 2fr 1fr;
