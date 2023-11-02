@@ -209,6 +209,12 @@ input:hover {
     gap: 1rem;
 }
 
+@media (max-aspect-ratio: 4/3), (min-height: 1000px) {
+    .side {
+        justify-content: flex-start;
+    }
+}
+
 .side-1 .card {
     display: grid;
     grid-template-rows: 1fr 0.1fr 1fr 0.1fr 1fr;
