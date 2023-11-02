@@ -47,8 +47,9 @@ a {
     text-shadow: 0 0 10px black;
 }
 
-.header a {
+.header-top a {
     color: black;
+    font-weight: bold;
 }
 
 .header-top a:hover {
@@ -131,6 +132,7 @@ input:hover {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 1rem;
+    margin-right: 2rem;
 }
 
 .header-top div {
@@ -154,6 +156,21 @@ input:hover {
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+.header-bottom img+div,
+.side-2 .card-content div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.header-bottom img+div {
+    font-weight: bold;
+}
+
+.header-bottom img+div > div:nth-child(2) {
+    font-size: 1.5rem;
 }
 
 .content {
@@ -252,12 +269,22 @@ input:hover {
     gap: 1rem;
 }
 
+.side-2 .card-content div > div:nth-child(2) {
+    color: hsl(0, 0%, 40%);
+}
+
 /* Images */
-.sidebar ul img {
+li img {
     height: 2rem;
 }
 
-.main img,
-.header img {
+button img,
+#search-icon {
     height: 1.5rem;
+}
+
+.profile {
+    height: 4rem;
+    border: 1px solid var(--color-sidebar);
+    border-radius: 2rem;
 }
