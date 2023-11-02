@@ -56,6 +56,14 @@ a {
     text-shadow: 0 0 10px grey;
 }
 
+.side-2 a {
+    color: black;
+}
+
+.side-2 a:hover {
+    font-weight: bold;
+}
+
 /* input */
 input {
     background-color: var(--color-content);
