@@ -37,6 +37,7 @@ a {
     display: flex;
     align-items: center;
     gap: 1rem;
+    width: fit-content;
 }
 
 .sidebar a {
@@ -45,6 +46,12 @@ a {
 
 .sidebar a:hover {
     text-shadow: 0 0 10px black;
+}
+
+.gh-link {
+    align-items: end;
+    gap: 0.5rem;
+    margin-left: 0.5rem;
 }
 
 .header-top a {
@@ -114,18 +121,21 @@ input:hover {
     background-color: var(--color-sidebar);
     color: white;
     grid-row: 1 / -1;
-    font-size: 1.5rem;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
 }
 
-.sidebar div {
+.sidebar div:nth-child(1) {
     font-size: 2rem;
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+.sidebar ul {
+    font-size: 1.5rem;
 }
 
 .header {
@@ -285,6 +295,10 @@ input:hover {
 /* img */
 li img {
     height: 2rem;
+}
+
+.gh-link img {
+    height: 1.5rem;
 }
 
 button img,
