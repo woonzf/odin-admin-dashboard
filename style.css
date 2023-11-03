@@ -213,6 +213,7 @@ input:hover {
 }
 
 .main .card {
+    height: 250px;
     border-left: 0.5rem solid var(--color-card-edge);
     padding: 1rem 1rem 0 1rem;
     display: grid;
@@ -231,10 +232,10 @@ input:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 2rem;
 }
 
-@media (max-aspect-ratio: 4/3), (min-height: 1000px) {
+@media (max-aspect-ratio: 4/3), (min-height: 1440px) {
     .side {
         justify-content: flex-start;
     }
@@ -281,7 +282,7 @@ input:hover {
     color: hsl(0, 0%, 40%);
 }
 
-/* Images */
+/* img */
 li img {
     height: 2rem;
 }
